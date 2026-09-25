@@ -1,10 +1,11 @@
 // STUDIO ELEGANCE - INTERACTIVE ENGINE
 document.addEventListener("DOMContentLoaded", () => {
 
-  // Dynamic booking handler (Official Studio Elegance WhatsApp link)
+  // Dynamic booking handler
   window.agendarProcedimento = function(nome) {
+    const tel = "5511999999999";
     const texto = encodeURIComponent(`Olá, Studio Elegance! Vi o site e gostaria de agendar um horário para: *${nome}*. Poderia me informar os horários disponíveis?`);
-    window.open(`https://wa.me/message/WZKDVHFIW23HO1?text=${texto}`, "_blank");
+    window.open(`https://wa.me/${tel}?text=${texto}`, "_blank");
   };
 
   // Filter Pills for Procedures
